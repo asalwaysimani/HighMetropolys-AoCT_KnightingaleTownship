@@ -1,0 +1,26 @@
+{
+    "Characters":{
+        "Hugo": {
+            "Neutral": "/assets/img/characters/placeholdersprites_Hugo.png"
+        },
+        "Lisha": {
+            "Neutral": "/assets/img/characters/placeholdersprites_Lisha.png"
+        }
+    },
+
+    "Scene1": {
+    	"Background": "/assets/img/backgrounds/Vision_Renders/familylivingroom_v1.png",
+    	"PAGES": {
+			"Page0" : {
+				"Character": "Hugo",
+				"Sprite": "Neutral",
+				"PageText": "Home Sweet Home!"
+            },
+            "Page1" : {
+				"Character": "Lisha",
+				"Sprite": "Neutral",
+				"PageText": "Finally home!"
+            }
+        }
+    }
+}

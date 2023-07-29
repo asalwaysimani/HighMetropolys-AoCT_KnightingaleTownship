@@ -1,0 +1,17 @@
+{
+  "paper": "#FFFFFF",
+  "light": "#7F7F7F",
+  "medium": "#7FD4FF",
+  "dark": "#000000",
+  "font": {
+    "face": null,
+    "embedded": null,
+    "size": 72,
+    "bold": false,
+    "italic": false
+  },
+  "north": "N",
+  "east": "E",
+  "south": "S",
+  "west": "W"
+}
