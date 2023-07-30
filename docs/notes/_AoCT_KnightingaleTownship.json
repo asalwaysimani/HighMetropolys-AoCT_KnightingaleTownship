@@ -1,0 +1,93 @@
+[
+	{
+		"nodes": [
+			{
+				"character": ["Lisha", 3],
+				"file": "",
+				"is_box": true,
+				"next": null,
+				"node_name": "9662530",
+				"node_type": "show_message",
+				"object_path": "",
+				"slide_camera": true,
+				"speaker_type": 0,
+				"text": { "ENG": "I saw your campfire and came over to investigate." },
+				"title": "Show Message"
+			},
+			{
+				"next": "8271986",
+				"node_name": "START",
+				"node_type": "start",
+				"title": ""
+			},
+			{
+				"character": ["Knightingale", 1],
+				"choices": [
+					{
+						"condition": "",
+						"is_condition": false,
+						"next": "7031564",
+						"text": { "ENG": "Set up camping gear" }
+					},
+					{
+						"condition": "",
+						"is_condition": false,
+						"next": "9551569",
+						"text": { "ENG": "Check the surrounding area" }
+					}
+				],
+				"file": "",
+				"is_box": true,
+				"node_name": "8271986",
+				"node_type": "show_message",
+				"object_path": "",
+				"slide_camera": true,
+				"speaker_type": 0,
+				"text": {
+					"ENG": "Well this is certain a place I could set down camp."
+				},
+				"title": "Show Message"
+			},
+			{
+				"character": ["Knightingale", 1],
+				"file": "",
+				"is_box": false,
+				"next": "9662530",
+				"node_name": "7031564",
+				"node_type": "show_message",
+				"object_path": "",
+				"slide_camera": true,
+				"speaker_type": 0,
+				"text": { "ENG": "Oh shit when did you get here?" },
+				"title": "Show Message"
+			},
+			{
+				"character": ["Hugo", 2],
+				"choices": [
+					{
+						"condition": "",
+						"is_condition": false,
+						"next": null,
+						"text": { "ENG": "Introduce yourself?" }
+					},
+					{
+						"condition": "",
+						"is_condition": false,
+						"next": null,
+						"text": { "ENG": "Say nothing" }
+					}
+				],
+				"file": "",
+				"is_box": false,
+				"node_name": "9551569",
+				"node_type": "show_message",
+				"object_path": "",
+				"slide_camera": true,
+				"speaker_type": 0,
+				"text": { "ENG": "Who goes there?" },
+				"title": "Show Message"
+			}
+		],
+		"variables": {}
+	}
+]

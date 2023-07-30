@@ -1,5 +1,6 @@
 {
     "files.autoSave": "afterDelay",
     "editor.wordWrap": "on",
-    "workbench.settings.openDefaultSettings": true
+    "workbench.settings.openDefaultSettings": true,
+    "livePreview.defaultPreviewPath": "/index.html"
 }

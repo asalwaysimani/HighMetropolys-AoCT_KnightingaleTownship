@@ -80,7 +80,7 @@ body {
 	/*Positioning in container*/
 	z-index: -1;
 	position: absolute;
-	bottom: 20%;
+	bottom: 10%;
 }
 
 .rightalign {

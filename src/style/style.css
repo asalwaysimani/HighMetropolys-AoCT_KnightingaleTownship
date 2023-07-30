@@ -1,3 +1,56 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/*
+    Based on TailwindCSS recommendations,
+    consider using classes instead of the `@apply` directive
+    @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100;1,100&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
+:root {
+	--text-color: #000000;
+	--text-background-color: #08737f;
+	--border-color: #262810;
+}
+* {
+	@apply m-0 p-0;
+}
+body {
+	@apply text-[22px] text-[color:var(--text-color)]; /*Basic Font Styling*/
+	font-family: "Nunito Sans", sans-serif;
+}
+#mainbox {
+	@apply w-[100vmin] h-[70vmin] absolute -translate-x-2/4 -translate-y-2/4 bg-cover left-2/4 top-2/4; /*Size of Main Container*/ /*Places container in the center of the screen*/ /*Sets selected background to cover the whole main container*/ /*Sets a border*/ /* border: 0.125vmin solid var(--border-color); */
+}
+#textbox {
+	@apply border-[color:var(--border-color)] w-[95%] h-1/5 overflow-auto absolute -translate-x-2/4 translate-y-0 m-auto p-2 border-[0.125vmin] border-solid left-2/4 bottom-[2%]; /*Sets a border*/ /*Sets a background color*/
+	background: var(
+		--text-background-color
+	); /*Sets size and padding*/ /*Makes text scrollable*/
+	word-break: break-word; /*Positioning in container*/
+}
+#optionsbox {
+	@apply text-[#c7f4f9];
+}
+#optionsbox > div:hover {
+	@apply text-[#effcdf] cursor-pointer;
+}
+#spritebox {
+	@apply max-w-[45%] z-[-1] absolute bottom-[10%]; /*Sets size*/ /*Positioning in container*/
+}
+.rightalign {
+	@apply right-[-7%] bottom-[-5%]; /*Right alignment class for the sprite*/
+}
+.leftalign {
+	@apply left-[5%]; /*Left alignment class for the sprite*/
+}
+#spritebox img {
+	@apply max-w-full; /*Ensures that image doesn't exceed box size*/
+}
+#namebox {
+	@apply border-[color:var(--border-color)] absolute p-2 border-[0.125vmin] border-solid left-[1.5%] bottom-[26.5%]; /*Sets background color, padding, and border*/
+	font-family: "Noto Serif", serif;
+	background: var(--text-background-color); /*Positions it in the container*/
+}
