@@ -47,7 +47,7 @@ async function grabData() {
 	/* Putting the data into an array */
 	json = await resp.json();
 	
-	currentPage = Object.keys(json.Scene1.PAGES)[pageNum];
+	currentPage = Object.keys(json.Scene1.Pages)[pageNum];
 	
 	// Initialize the data 
 	initialize(json);
@@ -64,12 +64,12 @@ async function initialize(data){
 	$textbox.innerText = ''; 
 	
 	//Changes appropriate HTML elements to the new attributes based on the data given when page turns/ program is initialized
-	$spritebox.src = data.Characters[data.Scene1.PAGES[currentPage].Character][data.Scene1.PAGES[currentPage].Sprite];
+	$spritebox.src = data.Characters[data.Scene1.Pages[currentPage].Character][data.Scene1.Pages[currentPage].Sprite];
 	
-	$namebox.innerText = data.Scene1.PAGES[currentPage].Character;
+	$namebox.innerText = data.Scene1.Pages[currentPage].Character;
 	
-	typeWriter(data.Scene1.PAGES[currentPage].PageText)	
-	// $textbox.innerText = data.Scene1.PAGES[pageNum][2]; //Uncomment this part for no typewriter effect 
+	typeWriter(data.Scene1.Pages[currentPage].PageText)	
+	// $textbox.innerText = data.Scene1.Pages[pageNum][2]; //Uncomment this part for no typewriter effect 
 	
 	$mainbox.style.backgroundImage = "url(" + data.Scene1.Background + ")"; 
 	
@@ -80,15 +80,15 @@ function handleOptions(data){
 	//Cleans it out
 	$optionsbox.innerHTML = "";
 
-	if(data.Scene1.PAGES[currentPage].hasOwnProperty('Options')){
-		var o = data.Scene1.PAGES[currentPage].Options;
+	if(data.Scene1.Pages[currentPage].hasOwnProperty('Options')){
+		var o = data.Scene1.Pages[currentPage].Options;
 		var str = Object.keys(o).forEach(k => {
 			const row = document.createElement('div');
 			row.innerHTML = `${k}`
 			$optionsbox.appendChild(row);
 			row.addEventListener('click', () => { 
 				currentPage = (o[k]);
-				pageNum = Object.keys(json.Scene1.PAGES).indexOf(currentPage);
+				pageNum = Object.keys(json.Scene1.Pages).indexOf(currentPage);
 				initialize(json); 
 				$optionsbox.innerHTML = "";
 			})
@@ -118,9 +118,9 @@ function typeWriter(txt, i) {
 }
 
 function checkPage(data){
-	if(data.Scene1.PAGES[currentPage].hasOwnProperty('Options')) return false;
-	if(data.Scene1.PAGES[currentPage].hasOwnProperty('NextPage')) {
-		if(data.Scene1.PAGES[currentPage].NextPage == "End") return false;
+	if(data.Scene1.Pages[currentPage].hasOwnProperty('Options')) return false;
+	if(data.Scene1.Pages[currentPage].hasOwnProperty('NextPage')) {
+		if(data.Scene1.Pages[currentPage].NextPage == "End") return false;
 	}
 	
 	return true;
@@ -131,12 +131,12 @@ document.addEventListener('keydown', (e) => {
 	if(!json) return;
 	if(e.key == "ArrowRight" && checkPage(json)){
 		
-		if(json.Scene1.PAGES[currentPage].hasOwnProperty('NextPage')){
-			currentPage = json.Scene1.PAGES[currentPage].NextPage;
+		if(json.Scene1.Pages[currentPage].hasOwnProperty('NextPage')){
+			currentPage = json.Scene1.Pages[currentPage].NextPage;
 		}
 		else {
 			pageNum++;
-			currentPage = Object.keys(json.Scene1.PAGES)[pageNum];
+			currentPage = Object.keys(json.Scene1.Pages)[pageNum];
 		}
 		
 		initialize(json);

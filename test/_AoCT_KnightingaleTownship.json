@@ -1,43 +1,27 @@
 [
 	{
-		"characters": ["Player", "Knightingale", "Hugo", "Lisha"],
-		"connections": [
-			{ "from": "START", "from_port": 0, "to": "8271986", "to_port": 0 },
-			{ "from": "8271986", "from_port": 0, "to": "7031564", "to_port": 0 },
-			{ "from": "7031564", "from_port": 0, "to": "9662530", "to_port": 0 },
-			{ "from": "8271986", "from_port": 1, "to": "9551569", "to_port": 0 }
-		],
-		"editor_version": "3.2.4",
-		"file_name": "AoCT_KnightingaleTownship",
-		"languages": ["ENG"],
 		"nodes": [
 			{
-				"character": ["Lisha", 3],
-				"expand": null,
-				"expand_size": [0, 0],
+				"Character": ["Lisha", 3],
 				"file": "",
-				"filename": "res://Nodes/Show Message.tscn",
 				"is_box": true,
 				"next": null,
 				"node_name": "9662530",
 				"node_type": "show_message",
 				"object_path": "",
-				"offset": [1105, -240],
 				"slide_camera": true,
 				"speaker_type": 0,
 				"text": { "ENG": "I saw your campfire and came over to investigate." },
 				"title": "Show Message"
 			},
 			{
-				"filename": "res://Nodes/Start.tscn",
 				"next": "8271986",
 				"node_name": "START",
 				"node_type": "start",
-				"offset": [-115, -75],
 				"title": ""
 			},
 			{
-				"character": ["Knightingale", 1],
+				"Character": ["Knightingale", 1],
 				"choices": [
 					{
 						"condition": "",
@@ -52,15 +36,11 @@
 						"text": { "ENG": "Check the surrounding area" }
 					}
 				],
-				"expand": null,
-				"expand_size": [0, 0],
 				"file": "",
-				"filename": "res://Nodes/Show Message.tscn",
 				"is_box": true,
 				"node_name": "8271986",
 				"node_type": "show_message",
 				"object_path": "",
-				"offset": [65, -235],
 				"slide_camera": true,
 				"speaker_type": 0,
 				"text": {
@@ -69,24 +49,20 @@
 				"title": "Show Message"
 			},
 			{
-				"character": ["Knightingale", 1],
-				"expand": null,
-				"expand_size": [0, 0],
+				"Character": ["Knightingale", 1],
 				"file": "",
-				"filename": "res://Nodes/Show Message.tscn",
 				"is_box": false,
 				"next": "9662530",
 				"node_name": "7031564",
 				"node_type": "show_message",
 				"object_path": "",
-				"offset": [625, -240],
 				"slide_camera": true,
 				"speaker_type": 0,
 				"text": { "ENG": "Oh shit when did you get here?" },
 				"title": "Show Message"
 			},
 			{
-				"character": ["Hugo", 2],
+				"Character": ["Hugo", 2],
 				"choices": [
 					{
 						"condition": "",
@@ -101,22 +77,17 @@
 						"text": { "ENG": "Say nothing" }
 					}
 				],
-				"expand": null,
-				"expand_size": [0, 0],
 				"file": "",
-				"filename": "res://Nodes/Show Message.tscn",
 				"is_box": false,
 				"node_name": "9551569",
 				"node_type": "show_message",
 				"object_path": "",
-				"offset": [610, 45],
 				"slide_camera": true,
 				"speaker_type": 0,
 				"text": { "ENG": "Who goes there?" },
 				"title": "Show Message"
 			}
 		],
-		"selected_language": "ENG",
 		"variables": {}
 	}
 ]

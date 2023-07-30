@@ -3,12 +3,13 @@ title: README
 author: Margaret Catter Developemt
 description: Knightingale Township is a web first town management game with hero collection & roguelike dungeon explortation with collected heroes.
 ---
+![AoCT_KnightingaleTownship_js](https://socialify.git.ci/asalwaysimani/AoCT_KnightingaleTownship_js/image?description=1&descriptionEditable=Knightingale%20Township%20is%20a%20work%20in%20progress%20town%20management%20game%20set%20in%20an%20original%20fantasy%20world.%20It%20will%20feature%20hero%20collection%20mechanics%2C%20roguelike%20elements%2C%20and%20dungeon%20exploration%20as%20you%20the%20player%20grow%20and%20manage%20the%20town%20and%20its%20inhabitants.&font=Bitter&language=1&name=1&owner=1&pattern=Charlie%20Brown&theme=Light)
 
 ## About
 
 Knightingale Township is a work in progress town management game set in an original fantasy world. It will feature hero collection mechanics, roguelike elements, and dungeon exploration as you the player grow and manage the town and its inhabitants.
 
-## Key Features
+## 🧐 Key Features
 
 - Town building with various required & optional buildings
   - Upgradable buildings

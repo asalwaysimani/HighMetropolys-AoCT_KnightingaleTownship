@@ -1,16 +1,16 @@
 {
     "Characters":{
         "Hugo": {
-            "Neutral": "/assets/img/characters/placeholdersprites_Hugo.png"
+            "Neutral": "/assets/img/Characters/placeholdersprites_Hugo.png"
         },
         "Lisha": {
-            "Neutral": "/assets/img/characters/placeholdersprites_Lisha.png"
+            "Neutral": "/assets/img/Characters/placeholdersprites_Lisha.png"
         }
     },
 
     "Scene1": {
     	"Background": "/assets/img/backgrounds/Vision_Renders/familylivingroom_v1.png",
-    	"PAGES": {
+    	"Pages": {
 			"Page0" : {
 				"Character": "Hugo",
 				"Sprite": "Neutral",

@@ -1,6 +1,6 @@
 ---
 title: Project Knightingale Township Lois Knightingale
-description: "Default player character"
+description: "Default player Character"
 ---
 
 Knightingale = adventurer (
