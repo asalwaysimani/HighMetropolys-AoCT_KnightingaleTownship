@@ -3,7 +3,6 @@ title: Credits
 description: Credits for all assets currently or planned to be used in Project Knightingale.
 ---
 
-[Ren'py Location & Minimap System](https://kigyo.itch.io/renpy-locationminimap-system) by [KigyoDev](https://kigyo.itch.io/)
 [One Page Dungeon](https://watabou.itch.io/one-page-dungeon) by [watabou](https://watabou.itch.io/)
 
 ## Potentional

@@ -2,16 +2,30 @@
   "name": "aoct-knightingale-township",
   "version": "0.0.1",
   "description": "Ascent of Crystal Tower Knightingale Township is a web first town management game with hero collection & roguelike dungeon explortation with collected heroes.",
-  "main": "main.js",
+  "main": "./scripts/main.js",
   "scripts": {
     "start": "electron .",
     "build-css": "tailwindcss build src/style/input.css -o public/output.css ",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/asalwaysimani/AoCT_KnightingaleTownship_js"
+  },
+  "keywords": [],
   "author": "Margaret Catter Development",
   "license": "MIT",
+  "homepage": "https://asalwaysimani.com/",
   "devDependencies": {
     "electron": "^25.3.1",
     "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "@aegis-framework/artemis": "^0.3.29",
+    "@aegis-framework/pandora": "^0.1.8",
+    "animate.css": "^4.1.1",
+    "mousetrap": "^1.6.5",
+    "pathfinding": "^0.4.18",
+    "tsparticles-engine": "^2.12.0"
   }
 }

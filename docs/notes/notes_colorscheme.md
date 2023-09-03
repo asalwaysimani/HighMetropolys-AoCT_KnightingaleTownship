@@ -1,3 +1,8 @@
+---
+title: Project Knightingale Township Color Scheme Notes
+description: "Color choices I need to reference a bunch while designing the game"
+---
+
 *** Primary color: 786fa6
 
    shade 0 = #786FA6 = rgb(120,111,166) = rgba(120,111,166,1) = rgb0(0.471,0.435,0.651)

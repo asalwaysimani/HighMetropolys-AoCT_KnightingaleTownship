@@ -1,24 +1,26 @@
 [
 	{
-		"Characters": ["Player", "Knightingale", "Hugo", "Lisha"],
+		"characters": null,
 		"connections": [
 			{ "from": "START", "from_port": 0, "to": "8271986", "to_port": 0 },
 			{ "from": "8271986", "from_port": 0, "to": "7031564", "to_port": 0 },
 			{ "from": "7031564", "from_port": 0, "to": "9662530", "to_port": 0 },
 			{ "from": "8271986", "from_port": 1, "to": "9551569", "to_port": 0 },
-			{ "from": "9551569", "from_port": 0, "to": "9660518", "to_port": 0 }
+			{ "from": "9551569", "from_port": 0, "to": "9660518", "to_port": 0 },
+			{ "from": "9660518", "from_port": 0, "to": "840039", "to_port": 0 },
+			{ "from": "840039", "from_port": 1, "to": "4261184", "to_port": 0 }
 		],
 		"editor_version": "3.2.4",
 		"file_name": "AoCT_KnightingaleTownship",
 		"languages": ["ENG"],
 		"nodes": [
 			{
-				"Character": ["Lisha", 3],
+				"character": ["", -1],
 				"expand": null,
 				"expand_size": [0, 0],
 				"file": "",
 				"filename": "res://Nodes/Show Message.tscn",
-				"is_box": true,
+				"is_box": false,
 				"next": null,
 				"node_name": "9662530",
 				"node_type": "show_message",
@@ -38,7 +40,7 @@
 				"title": ""
 			},
 			{
-				"Character": ["Knightingale", 1],
+				"character": ["", -1],
 				"choices": [
 					{
 						"condition": "",
@@ -57,7 +59,7 @@
 				"expand_size": [0, 0],
 				"file": "",
 				"filename": "res://Nodes/Show Message.tscn",
-				"is_box": true,
+				"is_box": false,
 				"node_name": "8271986",
 				"node_type": "show_message",
 				"object_path": "",
@@ -70,7 +72,7 @@
 				"title": "Show Message"
 			},
 			{
-				"Character": ["Knightingale", 1],
+				"character": ["", -1],
 				"expand": null,
 				"expand_size": [0, 0],
 				"file": "",
@@ -87,7 +89,62 @@
 				"title": "Show Message"
 			},
 			{
-				"Character": ["Hugo", 2],
+				"filename": "res://Nodes/Set Local Variable.tscn",
+				"next": "840039",
+				"node_name": "9660518",
+				"node_type": "set_local_variable",
+				"offset": [1015, 180],
+				"operation_type": null,
+				"title": "Set Local Variable",
+				"toggle": false,
+				"value": false,
+				"var_name": "has_meet"
+			},
+			{
+				"character": ["", -1],
+				"expand": null,
+				"expand_size": [0, 0],
+				"file": "",
+				"filename": "res://Nodes/Show Message.tscn",
+				"is_box": false,
+				"next": null,
+				"node_name": "4261184",
+				"node_type": "show_message",
+				"object_path": "",
+				"offset": [1645, 40],
+				"slide_camera": true,
+				"speaker_type": 0,
+				"text": { "ENG": "You have me at a disadventage" },
+				"title": "Show Message"
+			},
+			{
+				"branches": { "False": "4261184", "True": null },
+				"filename": "res://Nodes/Condition Branch.tscn",
+				"node_name": "840039",
+				"node_type": "condition_branch",
+				"offset": [1305, 160],
+				"text": "has_meet",
+				"title": "Condition Branch"
+			},
+			{
+				"character": ["", -1],
+				"expand": null,
+				"expand_size": [0, 0],
+				"file": "",
+				"filename": "res://Nodes/Show Message.tscn",
+				"is_box": true,
+				"next": null,
+				"node_name": "8807439",
+				"node_type": "show_message",
+				"object_path": "",
+				"offset": [-50, 170],
+				"slide_camera": true,
+				"speaker_type": 0,
+				"text": { "ENG": "Square dialogue boxes" },
+				"title": "Show Message"
+			},
+			{
+				"character": ["", -1],
 				"choices": [
 					{
 						"condition": "",
@@ -110,23 +167,28 @@
 				"node_name": "9551569",
 				"node_type": "show_message",
 				"object_path": "",
-				"offset": [525, 85],
-				"slide_camera": true,
+				"offset": [535, 35],
+				"slide_camera": false,
 				"speaker_type": 0,
 				"text": { "ENG": "Who goes there?" },
 				"title": "Show Message"
 			},
 			{
-				"filename": "res://Nodes/Set Local Variable.tscn",
+				"character": ["", -1],
+				"expand": null,
+				"expand_size": [0, 0],
+				"file": "",
+				"filename": "res://Nodes/Show Message.tscn",
+				"is_box": false,
 				"next": null,
-				"node_name": "9660518",
-				"node_type": "set_local_variable",
-				"offset": [1040, 195],
-				"operation_type": null,
-				"title": "Set Local Variable",
-				"toggle": false,
-				"value": false,
-				"var_name": "has_meet"
+				"node_name": "1177233",
+				"node_type": "show_message",
+				"object_path": "",
+				"offset": [390, 395],
+				"slide_camera": true,
+				"speaker_type": 0,
+				"text": { "ENG": "Round dialogue boxes" },
+				"title": "Show Message"
 			}
 		],
 		"selected_language": "ENG",

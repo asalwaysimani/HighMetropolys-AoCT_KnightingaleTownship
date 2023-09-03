@@ -22,12 +22,98 @@
 
 <body>
     <script type="text/javascript" src="src\VNscript.js" id='VisualNovelEngine'></script>
-    
-    <h1>Project Knightingale Township</h1>
-    <p>A web first town management game with hero collection & roguelike elements</p>
+
+    <!-- TITLESCREEN -->
+    <div id="titlescreen">
+    <div id="startMenu">
+        <h1 id="title">Project Knightingale Township</h1>
+        <p>A web first town management game with hero collection & roguelike elements</p>
+
+        <button class="startMenuBtn" onclick="startGame()">Start</button>
+        <button class="startMenuBtn" id="startLoadBtn">Load</button>
+        <button class="startMenuBtn" id="galleryBtn">Collection</button>
+        <button class="startMenuBtn">Exit</button>
+    </div>
+
+    <!-- PAUSE MENU -->
+<div id="pauseOverlay">
+    <div id="pauseMenu">
+        <span>Menu</span>
+        <button class="pMenuBtn" id="saveBtn">Save</button>
+        <button class="pMenuBtn" id="loadBtn">Load</button>
+        <button class="pMenuBtn" onclick="gotoTitle()">Titlescreen</button>
+        <button class="pMenuBtn">Settings</button>
+        <button class="pMenuBtn" onclick="off()">Resume</button>
+    </div>
+    </div>
+
+    <!-- OVERWRITE SAVE CONFIRMATION BOX -->
+    <div id="overwriteContainer">
+    <div class="centerContainer">
+        <span id="overwriteTxt">Overwrite previous save data?</span><br>
+        <div id="overwriteBtns">
+        <button class="omenuBtn" id="yesOverwriteBtn">Yes</button>
+        <button class="omenuBtn" onclick="closeOverwrite()">No</button>
+        </div>
+    </div>
+    </div>
+
+    <!-- SAVE/LOAD MENU -->
+    <div id="saveLoadMenuContainer">
+    <div class= "centerContainer">
+        <div class="saveLoadHeader" id="sl">Save Game</div>
+        <ul id="saveLoadMenu">
+        
+        </ul><br>
+        <button id="backBtn" onclick="closeSaveLoadMenu()">&lt;&lt; Back</button>
+    </div>
+    </div>
+
+    <!-- STORY LOG -->
+    <div id="logOverlay"></div>
+
+    <!-- PAUSE MENU -->
+<div id="pauseOverlay">
+    <div id="pauseMenu">
+        <span>Menu</span>
+        <button class="pMenuBtn" id="saveBtn">Save</button>
+        <button class="pMenuBtn" id="loadBtn">Load</button>
+        <button class="pMenuBtn" onclick="gotoTitle()">Titlescreen</button>
+        <button class="pMenuBtn">Settings</button>
+        <button class="pMenuBtn" onclick="off()">Resume</button>
+    </div>
+    </div>
+
+    <!-- OVERWRITE SAVE CONFIRMATION BOX -->
+    <div id="overwriteContainer">
+    <div class="centerContainer">
+        <span id="overwriteTxt">Overwrite previous save data?</span><br>
+        <div id="overwriteBtns">
+        <button class="omenuBtn" id="yesOverwriteBtn">Yes</button>
+        <button class="omenuBtn" onclick="closeOverwrite()">No</button>
+        </div>
+    </div>
+    </div>
+
+    <!-- SAVE/LOAD MENU -->
+    <div id="saveLoadMenuContainer">
+    <div class= "centerContainer">
+        <div class="saveLoadHeader" id="sl">Save Game</div>
+        <ul id="saveLoadMenu">
+        
+        </ul><br>
+        <button id="backBtn" onclick="closeSaveLoadMenu()">&lt;&lt; Back</button>
+    </div>
+    </div>
+
+    <!-- STORY LOG -->
+    <div id="logOverlay"></div>
 
 </body>
 
+<footer>
+    <p>Project Knightingale Township</p>
+</footer>
 
 
 </html>

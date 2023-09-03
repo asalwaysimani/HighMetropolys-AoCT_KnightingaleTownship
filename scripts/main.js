@@ -1,10 +1,17 @@
 const { app, BrowserWindow } = require('electron')
+// app controls your application's event lifecycle.
+// BrowserWindow creates and manages app windows.
 
 const createWindow = () => {
     const win = new BrowserWindow({
     width: 1920,
-    height: 1080
+    height: 1080,
+    webPreferences: {
+        preload: path.join(__dirname, 'preload.js'),
+        nodeIntegration: true}
 })
+
+// Load the index.html of the app.
 
 win.loadFile('index.html')
 }
@@ -24,3 +31,4 @@ app.whenReady().then(() => {
         app.quit()
     }
 })
+
