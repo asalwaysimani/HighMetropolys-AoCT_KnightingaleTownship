@@ -2,6 +2,12 @@ const { app, BrowserWindow } = require('electron')
 // app controls your application's event lifecycle.
 // BrowserWindow creates and manages app windows.
 
+// Just making sure things are running
+
+(function () {
+    console.log("Main is running")
+})();
+
 const createWindow = () => {
     const win = new BrowserWindow({
     width: 1920,

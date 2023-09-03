@@ -1,3 +1,9 @@
+// Just making sure things are running
+
+(function () {
+    console.log("Characters are loading")
+})();
+
 // Merchants & Craftsmith
 const mseb = "Sebastian the Swordsmith";
 

@@ -17,6 +17,7 @@
 * {
 	@apply m-0 p-0;
 }
+
 body {
 	@apply text-[22px] text-[color:var(--text-color)]; /*Basic Font Styling*/
 	font-family: "Nunito Sans", sans-serif;
