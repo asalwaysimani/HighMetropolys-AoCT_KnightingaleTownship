@@ -1,0 +1,20 @@
+{
+    "Health Points": "",
+    "Melee Attack Power": "",
+    "Ranged Attack Power": "",
+    "Physical Defense Score": "",
+    "Magical Defense Score": "",
+    "Accuracy Score": "",
+    "Evasion Score": "",
+    "Luck":"",
+    "Constitution":"",
+    "Communication":"",
+    "Insight":"",
+    "Saving Throws": [
+        "Perception", 
+        "Will Power",
+        "Fortitude",
+        "Resolve",
+        "Courage"
+    ]
+}

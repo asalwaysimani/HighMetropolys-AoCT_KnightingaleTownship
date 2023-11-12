@@ -2,5 +2,8 @@
     "files.autoSave": "afterDelay",
     "editor.wordWrap": "on",
     "workbench.settings.openDefaultSettings": true,
-    "livePreview.defaultPreviewPath": "/index.html"
+    "livePreview.defaultPreviewPath": "/index.html",
+    "cSpell.words": [
+        "Knightingale"
+    ]
 }
