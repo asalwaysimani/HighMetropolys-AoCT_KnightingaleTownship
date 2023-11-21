@@ -18,3 +18,4 @@ The next day after resting Sebastian informs Knightingale they've decided that t
 
 - Player is introduced to the Quest System.
 - Player can learn about the NPC Assignment system
+

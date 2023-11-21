@@ -5,6 +5,11 @@ description: Changelog for Ascent of Crystal Tower Knightingale Township.
 
 ## [Unreleased - In Development]
 
+## [2023-11-19]
+
+- Created document of just game mechanics based on notes from Story Outline. 
+- Created location document for The Crystal Tower the main location for Project Knightingale Township
+
 ## [2023-11-12]
 
 - Started the story outline. Basic flow of the story and at what point the player unlocks certain features.
